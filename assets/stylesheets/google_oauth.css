@@ -1,0 +1,66 @@
+/* Google OAuth Login Button Styles */
+
+.google-oauth-separator {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  margin: 20px 0;
+  color: #666;
+}
+
+.google-oauth-separator::before,
+.google-oauth-separator::after {
+  content: '';
+  flex: 1;
+  border-bottom: 1px solid #ddd;
+}
+
+.google-oauth-separator span {
+  padding: 0 15px;
+  font-size: 12px;
+  text-transform: uppercase;
+}
+
+.google-oauth-login {
+  text-align: center;
+  margin: 15px 0;
+}
+
+.google-oauth-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 24px;
+  background-color: #fff;
+  border: 1px solid #dadce0;
+  border-radius: 4px;
+  color: #3c4043;
+  font-family: 'Roboto', arial, sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background-color 0.2s, box-shadow 0.2s;
+  min-width: 200px;
+}
+
+.google-oauth-button:hover {
+  background-color: #f7f8f8;
+  box-shadow: 0 1px 2px 0 rgba(60, 64, 67, 0.3), 0 1px 3px 1px rgba(60, 64, 67, 0.15);
+  text-decoration: none;
+  color: #3c4043;
+}
+
+.google-oauth-button:active {
+  background-color: #eee;
+}
+
+.google-oauth-icon {
+  width: 18px;
+  height: 18px;
+  margin-right: 10px;
+}
+
+.google-oauth-button span {
+  vertical-align: middle;
+}

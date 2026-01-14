@@ -1,0 +1,25 @@
+vi:
+  # Plugin settings labels
+  label_google_oauth_enabled: "Bật đăng nhập bằng Google"
+  label_google_oauth_client_id: "Google Client ID"
+  label_google_oauth_client_id_info: "Lấy từ Google Cloud Console"
+  label_google_oauth_client_secret: "Google Client Secret"
+  label_google_oauth_client_secret_info: "Lấy từ Google Cloud Console"
+  label_google_oauth_allowed_domains: "Domain email được phép"
+  label_google_oauth_allowed_domains_info: "Danh sách domain phân cách bởi dấu phẩy (vd: company.com, example.org). Để trống để cho phép tất cả."
+  label_google_oauth_callback_url: "URL Callback OAuth"
+  label_google_oauth_callback_url_info: "Thêm URL này vào Authorized redirect URIs trong Google OAuth app:"
+
+  # Login button
+  label_google_oauth_sign_in: "Đăng nhập với Google"
+  label_google_oauth_or: "hoặc"
+
+  # Error messages
+  notice_google_oauth_disabled: "Đăng nhập bằng Google chưa được bật."
+  notice_google_oauth_invalid_state: "OAuth state không hợp lệ. Vui lòng thử lại."
+  notice_google_oauth_denied: "Đăng nhập Google bị từ chối hoặc hủy bỏ."
+  notice_google_oauth_no_code: "Không nhận được mã ủy quyền từ Google."
+  notice_google_oauth_token_error: "Không thể lấy access token từ Google."
+  notice_google_oauth_userinfo_error: "Không thể lấy thông tin người dùng từ Google."
+  notice_google_oauth_domain_not_allowed: "Domain email của bạn không được phép đăng nhập."
+  notice_google_oauth_user_not_found: "Không tìm thấy tài khoản Redmine với địa chỉ email này."
