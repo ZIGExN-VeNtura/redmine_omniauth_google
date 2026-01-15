@@ -1,46 +1,29 @@
-<table class="list">
-  <tbody>
-    <tr>
-      <td class="name">
-        <label for="settings_enabled"><%= l(:label_google_oauth_enabled) %></label>
-      </td>
-      <td class="value">
-        <%= hidden_field_tag 'settings[enabled]', '0' %>
-        <%= check_box_tag 'settings[enabled]', '1', @settings['enabled'].to_s == '1' %>
-      </td>
-    </tr>
-    <tr>
-      <td class="name">
-        <label for="settings_client_id"><%= l(:label_google_oauth_client_id) %> <span class="required">*</span></label>
-      </td>
-      <td class="value">
-        <%= text_field_tag 'settings[client_id]', @settings['client_id'], size: 60 %>
-        <em class="info"><%= l(:label_google_oauth_client_id_info) %></em>
-      </td>
-    </tr>
-    <tr>
-      <td class="name">
-        <label for="settings_client_secret"><%= l(:label_google_oauth_client_secret) %> <span class="required">*</span></label>
-      </td>
-      <td class="value">
-        <%= password_field_tag 'settings[client_secret]', @settings['client_secret'], size: 60 %>
-        <em class="info"><%= l(:label_google_oauth_client_secret_info) %></em>
-      </td>
-    </tr>
-    <tr>
-      <td class="name">
-        <label for="settings_allowed_domains"><%= l(:label_google_oauth_allowed_domains) %></label>
-      </td>
-      <td class="value">
-        <%= text_field_tag 'settings[allowed_domains]', @settings['allowed_domains'], size: 60 %>
-        <em class="info"><%= l(:label_google_oauth_allowed_domains_info) %></em>
-      </td>
-    </tr>
-  </tbody>
-</table>
+<p>
+  <label for="settings_enabled"><%= l(:label_google_oauth_enabled) %></label>
+  <%= hidden_field_tag 'settings[enabled]', '0' %>
+  <%= check_box_tag 'settings[enabled]', '1', @settings['enabled'].to_s == '1' %>
+</p>
+
+<p>
+  <label for="settings_client_id"><%= l(:label_google_oauth_client_id) %> <span class="required">*</span></label>
+  <%= text_field_tag 'settings[client_id]', @settings['client_id'], size: 60 %>
+  <br><em class="info"><%= l(:label_google_oauth_client_id_info) %></em>
+</p>
+
+<p>
+  <label for="settings_client_secret"><%= l(:label_google_oauth_client_secret) %> <span class="required">*</span></label>
+  <%= password_field_tag 'settings[client_secret]', @settings['client_secret'], size: 60 %>
+  <br><em class="info"><%= l(:label_google_oauth_client_secret_info) %></em>
+</p>
+
+<p>
+  <label for="settings_allowed_domains"><%= l(:label_google_oauth_allowed_domains) %></label>
+  <%= text_field_tag 'settings[allowed_domains]', @settings['allowed_domains'], size: 60 %>
+  <br><em class="info"><%= l(:label_google_oauth_allowed_domains_info) %></em>
+</p>
 
 <% if @settings['client_id'].present? %>
-<fieldset class="box">
+<fieldset class="box" style="margin-top: 1em;">
   <legend><%= l(:label_google_oauth_callback_url) %></legend>
   <p>
     <strong><%= l(:label_google_oauth_callback_url_info) %></strong><br>
