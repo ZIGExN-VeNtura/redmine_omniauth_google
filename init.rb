@@ -4,11 +4,11 @@ require_relative 'lib/redmine_omniauth_google'
 
 Redmine::Plugin.register :redmine_omniauth_google do
   name 'Redmine Google OAuth Login'
-  author 'Redmine Team'
+  author 'Ventura Development Team'
   description 'Plugin cho phép đăng nhập Redmine bằng tài khoản Google OAuth2'
   version '1.0.0'
-  url 'https://github.com/your-repo/redmine_omniauth_google'
-  author_url 'https://your-website.com'
+  url 'https://github.com/ZIGExN-VeNtura/redmine_omniauth_google'
+  author_url 'https://github.com/orgs/ZIGExN-VeNtura/teams/r-and-d'
 
   requires_redmine version_or_higher: '5.0'
 
